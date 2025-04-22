@@ -11,6 +11,15 @@ export const videosRouter = createTRPCRouter({
 			new_asset_settings: {
 				passthrough: userId,
 				playback_policy: ["public"],
+				input: [
+					{generated_subtitles: [
+						{
+							language_code: "en",
+							name: "English"
+
+						}
+					]}
+				]
 				// mp4_support: "standard", if i add credit card to mux
 			},
 			cors_origin: '*', //TODO:In prodction, set to your url
