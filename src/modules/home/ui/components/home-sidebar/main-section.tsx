@@ -25,7 +25,7 @@ const items = [
 	},
 	{
 		title: 'Trending',
-		url: '/feed/treanding',
+		url: '/feed/trending',
 		icon: FlameIcon,
 	},
 ];
